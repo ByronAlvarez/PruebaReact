@@ -1,0 +1,15 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /.*
+  script: build/index.html
+
+- url: /static/media
+  static_dir: build/static/media
+
+- url: /static/css
+  static_dir: build/static/css
+
+- url: /static/js
+  static_dir: build/static/js
